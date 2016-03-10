@@ -1,0 +1,8 @@
+/packages
+/*.suo
+/GdNet.Domain/obj
+/GdNet.Domain/bin
+/NuGet.GdNet.Domain/obj
+/NuGet.GdNet.Domain/bin
+/NuGet.GdNet.Domain/*.nupkg
+/NuGet.GdNet.Domain/*.bak
