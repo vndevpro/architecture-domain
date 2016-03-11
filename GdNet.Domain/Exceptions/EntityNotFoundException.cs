@@ -2,13 +2,11 @@
 
 namespace GdNet.Domain.Exceptions
 {
-    public class EntityNotFoundException : ApplicationException, IDomainException
+    public class EntityNotFoundException : EntityNotFoundExceptionT<Guid>, IDomainException
     {
         public EntityNotFoundException(Guid entityId)
+            : base(entityId)
         {
-            EntityId = entityId;
         }
-
-        public Guid EntityId { get; private set; }
     }
 }
