@@ -15,6 +15,12 @@
             This strategy always accepts state changing, only requires different bitween old state and new state
             </summary>
         </member>
+        <member name="M:GdNet.Domain.Entity.EditableEntityBase.#ctor">
+            <summary>
+            Entity does not support state. It will be empty.
+            Entity's availability (IsAvailable) is false by default.
+            </summary>
+        </member>
         <member name="T:GdNet.Domain.Entity.Impl.EntityNotAvailableByDefaultStrategy">
             <summary>
             This strategy will set IsAvailable to false
