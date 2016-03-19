@@ -55,9 +55,8 @@
     <Compile Include="Entity\IEntityAvailabilityStrategy.cs" />
     <Compile Include="Entity\IEntityStateStrategy.cs" />
     <Compile Include="Entity\Impl\NoStateStrategy.cs" />
-    <Compile Include="Exceptions\EntityNotFoundExceptionT.cs" />
-    <Compile Include="Exceptions\IDomainException.cs" />
     <Compile Include="Exceptions\EntityNotFoundException.cs" />
+    <Compile Include="Exceptions\IDomainException.cs" />
     <Compile Include="Exceptions\CommitDataException.cs" />
     <Compile Include="Exceptions\NoStateException.cs" />
     <Compile Include="Repository\IRepositoryBaseT.cs" />
