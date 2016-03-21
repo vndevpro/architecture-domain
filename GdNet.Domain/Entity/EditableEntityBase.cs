@@ -17,6 +17,7 @@ namespace GdNet.Domain.Entity
         protected EditableEntityBase(IEntityStateStrategy stateStrategy, IEntityAvailabilityStrategy availabilityStrategy)
             : base(stateStrategy, availabilityStrategy)
         {
+            Id = Guid.NewGuid();
         }
     }
 }
