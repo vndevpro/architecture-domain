@@ -37,5 +37,11 @@
             Id of then entity
             </summary>
         </member>
+        <member name="T:GdNet.Domain.Repository.RepositoryBase`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
     </members>
 </doc>
