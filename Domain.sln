@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GdNet.Domain", "GdNet.Domain\GdNet.Domain.csproj", "{EE64C1AC-4E70-4CF4-A03B-BD3F3687D192}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{38282FD3-543A-4EFB-9FD7-FCFB991B2D8B}"
@@ -11,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{38282F
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.GdNet.Domain", "NuGet.GdNet.Domain\NuGet.GdNet.Domain.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GdNet.Domain.AppCommon", "GdNet.Domain.AppCommon\GdNet.Domain.AppCommon.csproj", "{2EF3643B-9980-43BB-A476-B82C81B62C4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.GdNet.Domain.AppCommon", "NuGet.GdNet.Domain.AppCommon\NuGet.GdNet.Domain.AppCommon.csproj", "{59577D57-5A8A-45B0-BA61-91501CC14B2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +32,14 @@ Global
 		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EF3643B-9980-43BB-A476-B82C81B62C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EF3643B-9980-43BB-A476-B82C81B62C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EF3643B-9980-43BB-A476-B82C81B62C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EF3643B-9980-43BB-A476-B82C81B62C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59577D57-5A8A-45B0-BA61-91501CC14B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59577D57-5A8A-45B0-BA61-91501CC14B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59577D57-5A8A-45B0-BA61-91501CC14B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59577D57-5A8A-45B0-BA61-91501CC14B2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
