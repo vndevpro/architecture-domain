@@ -11,6 +11,14 @@ namespace GdNet.Domain.AppCommon
         private readonly IList<Attachment> _attachments;
 
         protected EntityWithAttachmentsBase()
+            : base()
+        {
+            _attachments = new List<Attachment>();
+        }
+
+        protected EntityWithAttachmentsBase(IEntityStateStrategy stateStrategy,
+            IEntityAvailabilityStrategy availabilityStrategy)
+            : base(stateStrategy, availabilityStrategy)
         {
             _attachments = new List<Attachment>();
         }
