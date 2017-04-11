@@ -6,3 +6,7 @@
 /NuGet.GdNet.Domain/bin
 /NuGet.GdNet.Domain/*.nupkg
 /NuGet.GdNet.Domain/*.bak
+/GdNet.Domain.AppCommon/bin/Release
+/NuGet.GdNet.Domain.AppCommon/bin/Release
+/NuGet.GdNet.Domain.AppCommon/obj/Release
+/GdNet.Domain.AppCommon/obj

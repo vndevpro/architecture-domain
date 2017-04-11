@@ -40,6 +40,10 @@
       <HintPath>..\packages\GdNet.Domain.2.0.4\lib\GdNet.Domain.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Rabbit.Foundation, Version=1.0.0.32496, Culture=neutral, PublicKeyToken=d23bc9f0c654bb35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rabbit.Foundation.1.12.0\lib\Rabbit.Foundation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,7 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attachment.cs" />
+    <Compile Include="EntityWithAttachmentsBase.cs" />
     <Compile Include="IAttachmentRepository.cs" />
+    <Compile Include="IEntityWithAttachments.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
