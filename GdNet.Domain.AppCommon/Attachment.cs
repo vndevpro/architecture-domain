@@ -7,7 +7,7 @@ namespace GdNet.Domain.AppCommon
 {
     public class Attachment : EditableEntityBase, IAggregateRoot
     {
-        private IDictionary<string, string> _attributes;
+        private IDictionary<string, string> _attributes = new Dictionary<string, string>();
 
         public string Name { get; set; }
 
@@ -17,7 +17,7 @@ namespace GdNet.Domain.AppCommon
 
         public long Size { get; set; }
 
-        public string Path { get; set; }
+        public string OriginalFilePath { get; set; }
 
         public virtual byte[] Content { get; set; }
 
@@ -48,6 +48,12 @@ namespace GdNet.Domain.AppCommon
         public IDictionary<string, string> GetAttributes()
         {
             return _attributes;
+        }
+
+        public Attachment AddAttribute(string key, string value)
+        {
+            _attributes.Add(key, value);
+            return this;
         }
     }
 }
