@@ -46,6 +46,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attachment.cs" />
+    <Compile Include="AttachmentFactory.cs" />
     <Compile Include="EntityWithAttachmentsBase.cs" />
     <Compile Include="IAttachmentRepository.cs" />
     <Compile Include="IEntityWithAttachments.cs" />
