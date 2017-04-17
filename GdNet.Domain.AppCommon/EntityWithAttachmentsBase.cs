@@ -30,7 +30,7 @@ namespace GdNet.Domain.AppCommon
 
         public IEntityWithAttachments AddAttachment(Attachment attachment)
         {
-            if (_attachments.All(x => x.Id != attachment.Id))
+            if (Attachments.All(x => x.Id != attachment.Id))
             {
                 _attachments.Add(attachment);
             }

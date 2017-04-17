@@ -10,3 +10,6 @@
 /NuGet.GdNet.Domain.AppCommon/bin/Release
 /NuGet.GdNet.Domain.AppCommon/obj/Release
 /GdNet.Domain.AppCommon/obj
+*.user
+/AppCommonTests/bin/Release
+/AppCommonTests/obj/Release

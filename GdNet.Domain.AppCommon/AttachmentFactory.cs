@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Globalization;
+using System.IO;
 using System.Web;
 
 namespace GdNet.Domain.AppCommon
@@ -27,9 +28,20 @@ namespace GdNet.Domain.AppCommon
             if (includeContent)
             {
                 newAttachment.Content = File.ReadAllBytes(attachmentPath);
+
+                LoadAttributes(newAttachment, fileInfo);
             }
 
             return newAttachment;
+        }
+
+        private static void LoadAttributes(Attachment entity, FileInfo fileInfo)
+        {
+            var attributes = entity.GetAttributes();
+
+            attributes.Add("CreationTime", fileInfo.CreationTime.ToFileTime().ToString(CultureInfo.InvariantCulture));
+            attributes.Add("LastAccessTime", fileInfo.LastAccessTime.ToFileTime().ToString(CultureInfo.InvariantCulture));
+            attributes.Add("LastWriteTime", fileInfo.LastWriteTime.ToFileTime().ToString(CultureInfo.InvariantCulture));
         }
     }
 }

@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GdNet.Domain.AppCommon", "G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.GdNet.Domain.AppCommon", "NuGet.GdNet.Domain.AppCommon\NuGet.GdNet.Domain.AppCommon.csproj", "{59577D57-5A8A-45B0-BA61-91501CC14B2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppCommonTests", "AppCommonTests\AppCommonTests.csproj", "{862C255A-52F6-4FDC-BDE5-BA82C733E634}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{59577D57-5A8A-45B0-BA61-91501CC14B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59577D57-5A8A-45B0-BA61-91501CC14B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59577D57-5A8A-45B0-BA61-91501CC14B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{862C255A-52F6-4FDC-BDE5-BA82C733E634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{862C255A-52F6-4FDC-BDE5-BA82C733E634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{862C255A-52F6-4FDC-BDE5-BA82C733E634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{862C255A-52F6-4FDC-BDE5-BA82C733E634}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
