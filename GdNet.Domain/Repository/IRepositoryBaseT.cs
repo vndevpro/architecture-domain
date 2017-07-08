@@ -25,6 +25,10 @@ namespace GdNet.Domain.Repository
 
         IEnumerable<T> Save(IEnumerable<T> entities);
 
+        /// <summary>
+        /// Delete an entity by its Id
+        /// </summary>
+        /// <param name="id"></param>
         void Delete(TId id);
 
         void Delete(T entity);

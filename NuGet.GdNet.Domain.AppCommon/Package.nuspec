@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>GdNet.Domain.AppCommon</id>
-    <version>2.2.1</version>
+    <version>2.2.2</version>
     <title>GdNet.Domain.AppCommon</title>
     <authors>RabbitSoftware</authors>
     <owners>junioho</owners>
@@ -21,6 +21,7 @@
     <copyright>Copyright @ 2017</copyright>
     <dependencies>
         <group targetFramework="net45">
+          <dependency id="GdNet.Common" version="1.9.0" />
           <dependency id="GdNet.Domain" version="2.0.4" />
         </group>
     </dependencies>
