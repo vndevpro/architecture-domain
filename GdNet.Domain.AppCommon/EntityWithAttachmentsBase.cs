@@ -28,7 +28,7 @@ namespace GdNet.Domain.AppCommon
             get { return new SmartList<Attachment>(_attachments); }
         }
 
-        public IEntityWithAttachments AddAttachment(Attachment attachment)
+        public virtual IEntityWithAttachments AddAttachment(Attachment attachment)
         {
             if (Attachments.All(x => x.Id != attachment.Id))
             {
@@ -37,7 +37,7 @@ namespace GdNet.Domain.AppCommon
             return this;
         }
 
-        public IEntityWithAttachments RemoveAttachment(Guid attachmentId)
+        public virtual IEntityWithAttachments RemoveAttachment(Guid attachmentId)
         {
             var attachment = GetAttachment(attachmentId);
             if (attachment != null)
@@ -47,7 +47,7 @@ namespace GdNet.Domain.AppCommon
             return this;
         }
 
-        public Attachment GetAttachment(Guid attachmentId)
+        public virtual Attachment GetAttachment(Guid attachmentId)
         {
             return Attachments.FirstOrDefault(x => x.Id == attachmentId);
         }
