@@ -6,11 +6,30 @@ namespace GdNet.Domain.AppCommon
 {
     public class AttachmentFactory
     {
+        /// <summary>
+        /// Create a object with default available and set value for Size
+        /// </summary>
+        /// <param name="contentBytes"></param>
+        /// <returns></returns>
+        public static Attachment Create(byte[] contentBytes)
+        {
+            return new Attachment()
+            {
+                Content = contentBytes,
+                IsAvailable = true,
+                Size = contentBytes.Length,
+            };
+        }
+
         public static Attachment Create(string attachmentPath)
         {
             return Create(attachmentPath, false);
         }
 
+        /// <summary>
+        /// Create an Attachment object & load information into attributes.
+        /// Include - Name, ContentType, Extension, Size and common attributes
+        /// </summary>
         public static Attachment Create(string attachmentPath, bool includeContent)
         {
             var fileInfo = new FileInfo(attachmentPath);
@@ -18,7 +37,6 @@ namespace GdNet.Domain.AppCommon
             var newAttachment = new Attachment()
             {
                 Name = fileInfo.Name,
-                // TODO: remove dependent on System.Web
                 ContentType = MimeMapping.GetMimeMapping(fileInfo.Name),
                 Extension = fileInfo.Extension,
                 Size = fileInfo.Length,
