@@ -32,10 +32,26 @@
             </summary>
             <typeparam name="TId"></typeparam>
         </member>
+        <member name="T:GdNet.Domain.Exceptions.IDomainException">
+            <summary>
+            Domain layer exception
+            </summary>
+        </member>
+        <member name="P:GdNet.Domain.Exceptions.IDomainException.Message">
+            <summary>
+            Error message
+            </summary>
+        </member>
         <member name="P:GdNet.Domain.Exceptions.EntityNotFoundException`1.EntityId">
             <summary>
             Id of then entity
             </summary>
+        </member>
+        <member name="M:GdNet.Domain.Repository.IRepositoryBaseT`2.Delete(`1)">
+            <summary>
+            Delete an entity by its Id
+            </summary>
+            <param name="id"></param>
         </member>
         <member name="T:GdNet.Domain.Repository.RepositoryBase`1">
             <summary>
