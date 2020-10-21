@@ -13,3 +13,10 @@
 *.user
 /AppCommonTests/bin/Release
 /AppCommonTests/obj/Release
+/.vs/Domain/v15
+/AppCommonTests/bin/Debug
+/AppCommonTests/obj/Debug
+/GdNet.Domain.AppCommon/bin/Debug
+/NuGet.GdNet.Domain.AppCommon/bin/Debug
+/NuGet.GdNet.Domain.AppCommon/obj/Debug
+/NuGet.GdNet.Domain.AppCommon
