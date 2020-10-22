@@ -55,13 +55,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GdNet.Domain-Migration\GdNet.Domain-Migration.csproj">
+      <Project>{9beb2392-7406-49ad-929d-a771ee7e00ab}</Project>
+      <Name>GdNet.Domain-Migration</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GdNet.Domain.AppCommon\GdNet.Domain.AppCommon.csproj">
       <Project>{2ef3643b-9980-43bb-a476-b82c81b62c4e}</Project>
       <Name>GdNet.Domain.AppCommon</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GdNet.Domain\GdNet.Domain.csproj">
-      <Project>{EE64C1AC-4E70-4CF4-A03B-BD3F3687D192}</Project>
-      <Name>GdNet.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

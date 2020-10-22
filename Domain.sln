@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GdNet.Domain", "GdNet.Domain\GdNet.Domain.csproj", "{EE64C1AC-4E70-4CF4-A03B-BD3F3687D192}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GdNet.Domain.AppCommon", "GdNet.Domain.AppCommon\GdNet.Domain.AppCommon.csproj", "{2EF3643B-9980-43BB-A476-B82C81B62C4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppCommonTests", "AppCommonTests\AppCommonTests.csproj", "{862C255A-52F6-4FDC-BDE5-BA82C733E634}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{623BFF40-4CB1-4719-B543-AB2FA03F7A5C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GdNet.Domain-Migration", "GdNet.Domain-Migration\GdNet.Domain-Migration.csproj", "{9BEB2392-7406-49AD-929D-A771EE7E00AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGdNetDomainPackageNetCore", "TestGdNetDomainPackageNetCore\TestGdNetDomainPackageNetCore.csproj", "{D3ED4CA5-2CCD-4CAE-A32B-DC9082F3F3D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGdNetCommonNet45", "TestGdNetCommonNet45\TestGdNetCommonNet45.csproj", "{6FB8C0B1-50DD-4963-BCC4-EFC57E01221E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EE64C1AC-4E70-4CF4-A03B-BD3F3687D192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE64C1AC-4E70-4CF4-A03B-BD3F3687D192}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE64C1AC-4E70-4CF4-A03B-BD3F3687D192}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE64C1AC-4E70-4CF4-A03B-BD3F3687D192}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2EF3643B-9980-43BB-A476-B82C81B62C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2EF3643B-9980-43BB-A476-B82C81B62C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EF3643B-9980-43BB-A476-B82C81B62C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,12 +29,26 @@ Global
 		{862C255A-52F6-4FDC-BDE5-BA82C733E634}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{862C255A-52F6-4FDC-BDE5-BA82C733E634}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{862C255A-52F6-4FDC-BDE5-BA82C733E634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BEB2392-7406-49AD-929D-A771EE7E00AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BEB2392-7406-49AD-929D-A771EE7E00AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BEB2392-7406-49AD-929D-A771EE7E00AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BEB2392-7406-49AD-929D-A771EE7E00AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3ED4CA5-2CCD-4CAE-A32B-DC9082F3F3D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3ED4CA5-2CCD-4CAE-A32B-DC9082F3F3D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3ED4CA5-2CCD-4CAE-A32B-DC9082F3F3D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3ED4CA5-2CCD-4CAE-A32B-DC9082F3F3D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB8C0B1-50DD-4963-BCC4-EFC57E01221E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB8C0B1-50DD-4963-BCC4-EFC57E01221E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB8C0B1-50DD-4963-BCC4-EFC57E01221E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB8C0B1-50DD-4963-BCC4-EFC57E01221E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{862C255A-52F6-4FDC-BDE5-BA82C733E634} = {623BFF40-4CB1-4719-B543-AB2FA03F7A5C}
+		{D3ED4CA5-2CCD-4CAE-A32B-DC9082F3F3D6} = {623BFF40-4CB1-4719-B543-AB2FA03F7A5C}
+		{6FB8C0B1-50DD-4963-BCC4-EFC57E01221E} = {623BFF40-4CB1-4719-B543-AB2FA03F7A5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDFA9360-C784-4EEB-8B5E-53C9FDB4076A}

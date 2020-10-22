@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+    <RootNamespace>GdNet.Domain</RootNamespace>
+    <AssemblyName>GdNet.Domain</AssemblyName>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="GdNet.Common" Version="2.9.0"></PackageReference>
+  </ItemGroup>
+
+</Project>

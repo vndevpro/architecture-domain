@@ -20,3 +20,10 @@
 /NuGet.GdNet.Domain.AppCommon/bin/Debug
 /NuGet.GdNet.Domain.AppCommon/obj/Debug
 /NuGet.GdNet.Domain.AppCommon
+/.vs/Domain/DesignTimeBuild
+/GdNet.Domain-Migration/bin/Release
+/GdNet.Domain-Migration/obj
+/TestGdNetCommonNet45/bin/Release
+/TestGdNetCommonNet45/obj/Release
+/TestGdNetDomainPackageNetCore/bin/Release/netcoreapp2.1
+/TestGdNetDomainPackageNetCore/obj

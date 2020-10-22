@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>GdNet.Domain</id>
+    <version>2.2.0</version>
+    <title>GdNet.Domain</title>
+    <authors>RabbitSoftware</authors>
+    <owners>junioho</owners>
+    <description>
+      Base classes for domain entities
+    </description>
+    <releaseNotes>
+      Version 2.2.0
+      - Support netstandard
+	  Version 2.0.0
+      - Support generic as an option
+      Version 1.5.0
+      - Support to set entity's availability when instantiate new instance. It's not availabe by default.
+      Version 1.4.0
+      - Add DefaultStateStrategy that always allows to change state
+      - Fix NoStateStrategy that will raise an exception NoStateException
+    </releaseNotes>
+    <summary>
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://github.com/vndevpro/architecture-domain</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <copyright>Copyright @ RabbitSoftware 2015-2010</copyright>
+    <dependencies>
+      <group targetFramework="net45">
+        <dependency id="GdNet.Common" version="2.9.0" />
+      </group>
+	  <group targetFramework="netstandard2.0">
+        <dependency id="GdNet.Common" version="2.9.0" />
+      </group>
+    </dependencies>
+    <references></references>
+    <tags>RabbitSoftware DomainBase</tags>
+  </metadata>
+  <files>
+    <file src="lib\" target="lib" />
+  </files>
+</package>
